@@ -1,0 +1,31 @@
+.footer{
+    width: 100%;
+    height: 5vw;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .footer__rodape {
+    color: var(--cor-de-letra);
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.78px;
+ }
+ .footer__rodape p {
+   margin: 0;
+ }
+
+ @media (max-width: 425px) {
+   .footer{
+      height: 15vw;
+   }
+ }
+
+ @media (min-width:425px) and (max-width:768px) {
+   .footer{
+      height: 15vw;
+   }
+ }
