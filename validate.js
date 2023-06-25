@@ -1,12 +1,21 @@
-var nome = document.getElementById("nome")
-var email = document.getElementById("email")
-var assunto = document.getElementById("assunto")
-var mensagem = document.getElementById("mensagem")
+var nome = document.getElementById("nome");
+var email = document.getElementById("email");
+var assunto = document.getElementById("assunto");
+var mensagem = document.getElementById("mensagem");
+
+//regex para validação de email
+let reg = /^[\w.\+]+@\w+.\w{2,}(?:.\w{2})?$/;
 
 
 function Envio(e) {
-    alert("Mensagem enviada!");
     e.preventDefault();
+    var botao = document.getElementById("botao");
+    botao.style.backgroundColor= 'green';
+    botao.innerText= "Mensagem enviada";
+    nome.value='';
+    email.value='';
+    assunto.value='';
+    mensagem.value='';
 }
 
 function ehValido(campo){
@@ -19,12 +28,12 @@ function ehValido(campo){
 
     botao.disabled = true;
     botao.style.backgroundColor= "#2A7AE4";
-
+    botao.innerText= "Enviar mensagem";
 
 
     if(ehBrancoOuVazio(nome.value)){  
         if(campo=='nome') spanNomeInvalido.innerText="Nome não pode ser vazio ou em branco!";
-        return false;
+         return false;
     }
     else if(ehMaiorQueNumero(nome.value,50)){
         if(campo=='nome') spanNomeInvalido.innerText="Nome deve ter apenas 50 caracteres!";
@@ -38,6 +47,10 @@ function ehValido(campo){
     if(ehBrancoOuVazio(email.value)){
     
         if(campo=='email')spanEmailInvalido.innerText="Email não pode ser branco ou vazio!";
+        return false;
+    }
+    else if(!reg.test(email.value)){
+        if(campo=='email')spanEmailInvalido.innerText="Email invalido, deve ser teste@gmail.com";
         return false;
     }
     else{
@@ -71,7 +84,7 @@ function ehValido(campo){
         spanMensagemInvalido.innerText="";
     }
 
-    botao.style.backgroundColor= "green";
+    botao.style.backgroundColor= "darkblue";
     botao.disabled = false;
     
 }
