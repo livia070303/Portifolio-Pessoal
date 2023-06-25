@@ -50,14 +50,12 @@ function ehValido(campo){
         return false;
     }
     else if(!reg.test(email.value)){
-        if(campo=='email')spanEmailInvalido.innerText="Email invalido, deve ser teste@gmail.com";
+        if(campo=='email')spanEmailInvalido.innerText="Email invalido, deve ser: teste@gmail.com";
         return false;
     }
     else{
         spanEmailInvalido.innerText="";
     }
-    /*Deve estar em formato de e-mail contendo o caractere especial @ seguido por um domínio ou provedor seguido por um ponto (.)
-    Exemplo: text@texto.com*/
 
     if(ehBrancoOuVazio(assunto.value)){
     

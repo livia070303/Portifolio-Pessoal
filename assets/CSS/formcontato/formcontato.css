@@ -62,12 +62,18 @@
     height: 12%;
     border: none;
 }
+.error__form {
+    font-size: 0.8rem;
+    color: #f50808;
+    margin: 2% 0;
+}
+
 @media (max-width: 425px) {
     .formcontato--esquerda {
         display: none;
     }
     .formcontato{
-        height: 100vw;
+        height: 30rem;
     }
     .formcontato__title{
         font-size: 4.5vw;
@@ -81,7 +87,13 @@
     }
     .formcontato__botao {
         width: 50%;
-        height: 20%;
+        height: 15%;
+    }
+    .formcontato__textarea {
+        height: 50%;
+    }
+    .formcontato__form {
+        height: 80%;
     }
 }
 

@@ -249,19 +249,19 @@
                         <form class="formcontato__form" onsubmit="Envio(event)">
                             <input class="formcontato__input" type="text" id="nome" placeholder="Nome"
                                 onblur="ehValido('nome')">
-                            <span id="nomeInvalido"></span>
+                            <span class="error__form" id="nomeInvalido"></span>
 
                             <input class="formcontato__input" type="email" id="email" placeholder="Email"
                                 onblur="ehValido('email')">
-                            <span id="emailInvalido"></span>
+                            <span class="error__form" id="emailInvalido"></span>
 
                             <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto"
                                 onblur="ehValido('assunto')">
-                            <span id="assuntoInvalido"></span>
+                            <span class="error__form" id="assuntoInvalido"></span>
 
                             <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem"
                                 placeholder="Sua mensagem" onblur="ehValido('mensagem')"></textarea>
-                            <span id="mensagemInvalido"></span>
+                            <span class="error__form" id="mensagemInvalido"></span>
 
                             <button disabled id="botao" class="formcontato__botao">Enviar mensagem</button>
                         </form>
