@@ -51,6 +51,7 @@
 }
 .formcontato__textarea {
     height: 20%;
+    resize: none;
 }
 .formcontato__input {
     height: 9%;
@@ -68,7 +69,7 @@
     margin: 2% 0;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 424px) {
     .formcontato--esquerda {
         display: none;
     }
@@ -102,7 +103,7 @@
         display: none;
     }
     .formcontato{
-        height: 100vw;
+        height: 35rem;
     }
     .formcontato__title{
         font-size: 4.5vw;
@@ -115,7 +116,7 @@
         width: 100%;
     }
     .formcontato__botao {
-        width: 45%;
-        height: 10%;
+        width: 35%;
+        height: 15%;
     }
 }

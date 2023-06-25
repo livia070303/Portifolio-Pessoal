@@ -26,6 +26,12 @@
     padding: 0;
     width: 85%;
 }
+.about__assinatura{
+    width: 20%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    opacity: 0.6;
+}
 
 @media (max-width: 425px) {
     .about__paragraph{
