@@ -5,6 +5,8 @@
      <img width="600" heigth="600" src="assets/img/print-tela.png">
 </p>
 
+### O projeto Portifolio Pessoal foi proposto no curso da Oracle Next Education/Alura com o intuito de mostrar quem eu sou e demonstrar meus projetos e todo meu conhecimento!
+---
 ### Analisando meu repositório!
 ---
 ### Este é o repositório base do meu projeto, nele você encontrará:
